@@ -9,7 +9,6 @@ class PizzaHut(Pizza):
         super().__init__(pizza_id, name, address, employees, phone_number)
         self.store_rank = self._calculate_rank()
 
-
     @overrides
     def _calculate_rank(self):
         total_employee_rank = 0

@@ -1,7 +1,4 @@
 from abc import ABC, abstractmethod
-
-from overrides import overrides
-
 import Surprisable
 from Rankable import Rankable
 
@@ -15,7 +12,6 @@ class Pizza(Rankable, ABC):
         self.employees = employees
         self.phone_number = phoneNumber
         self.store_rank = None
-
 
     def get_number_of_employees(self):
         return len(self.employees)
